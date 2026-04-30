@@ -71,3 +71,8 @@ export default defineConfig([
   },
 ])
 ```
+
+### Para testar
+
+#### Rode em um terminal ```npm run api```
+#### Rode em outro terminal ```npm run dev```
