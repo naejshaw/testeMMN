@@ -164,6 +164,8 @@ export const NetworkView: React.FC<NetworkViewProps> = ({ referenceUser, onDrill
               <option value="1">Nível 1 (Apenas Diretos)</option>
               <option value="2">Nível 2 (Indiretos de 1º grau)</option>
               <option value="3">Nível 3 (Indiretos de 2º grau)</option>
+              <option value="4">Nível 4 (Indiretos de 3º grau)</option>
+              <option value="5">Nível 5 (Indiretos de 4º grau)</option>
               <option value="Todos">Todos os Níveis (Misturados)</option>
             </select>
           </div>

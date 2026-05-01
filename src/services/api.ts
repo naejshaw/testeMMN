@@ -18,9 +18,10 @@ const API_BASE = 'http://localhost:3000/api';
  * Uses a fake X-Auth header to pretend we are logged in as root ("USR-0").
  */
 export async function fetchUserNetwork(targetUserId: string): Promise<UserNode> {
+  const token = localStorage.getItem('mmn_token');
   const response = await fetch(`${API_BASE}/network/${targetUserId}`, {
     headers: {
-      'x-auth-user-id': 'USR-0', // Identifying as root so root sees its own revenue
+      'Authorization': `Bearer ${token}`
     }
   });
 
